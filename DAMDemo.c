@@ -16,7 +16,7 @@ int main()
 //    arr = (int *)malloc(10 * sizeof(int));
     arr = (int *)calloc(10 , sizeof(int));
 
-//    arr = realloc(arr , 20 * sizeof(int));
+    arr = realloc(arr , 20 * sizeof(int));
     
     
     
@@ -26,12 +26,12 @@ int main()
         printf("Value: %d\n",arr[i]);
     }
     
-    free(arr);
     
     for (i = 0; i < 10; i++) {
         printf("Value: %d\n",arr[i]);
     }
 
-    
+    free(arr);
+
     return 0;
 }
